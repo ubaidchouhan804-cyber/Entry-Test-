@@ -1,0 +1,14 @@
+{
+  "name": "entrytest-pro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "mkdir -p dist && cp index.html style.css script.js dist/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}

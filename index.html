@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EntryTest Pro | Admission Preparation</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside>
+        <div>
+          <div class="brand">
+            <div class="logo-box">EP</div>
+            <h1 class="brand-name">EntryTest Pro</h1>
+          </div>
+          
+          <nav>
+            <button class="nav-item active" id="nav-dashboard">
+              <i data-lucide="layout-dashboard"></i> Dashboard
+            </button>
+            <button class="nav-item" id="nav-history">
+              <i data-lucide="history"></i> Progress
+            </button>
+            <button class="nav-item" id="nav-resources">
+              <i data-lucide="file-text"></i> Resources
+            </button>
+          </nav>
+        </div>
+
+        <div class="sidebar-footer">
+          <p class="tip-label">Study Strategy</p>
+          <p class="tip-text">Consistency beats intensity. Practice 20 MCQs daily.</p>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Header -->
+        <header>
+          <div class="search-bar">
+            <i data-lucide="search" class="search-icon" width="18"></i>
+            <input type="text" placeholder="Search topics (Algebra, Vocab)...">
+          </div>
+          
+          <div class="user-profile">
+            <div class="avatar"><i data-lucide="user" width="20"></i></div>
+          </div>
+        </header>
+
+        <!-- Dynamic Content -->
+        <div class="content-viewport">
+          
+          <!-- View: Dashboard -->
+          <div id="view-dashboard" class="view-container active">
+            <div class="welcome-section">
+              <h2 class="welcome-title">Academic Overview</h2>
+              <p class="welcome-subtext">Welcome back, Candidate. Your progress is being tracked safely.</p>
+            </div>
+
+            <div id="subjects-grid" class="grid-subjects">
+              <!-- JS Injected Cards -->
+            </div>
+
+            <div class="mock-cta">
+              <div class="mock-info">
+                <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--natural-sidebar);">Try a Mock Test</h2>
+                <p style="color: var(--natural-subtext); font-size: 0.875rem;">Simulate real test environment with 50 questions across all subjects.</p>
+              </div>
+              <button class="btn-primary" id="start-mock">Start Simulation</button>
+            </div>
+          </div>
+
+          <!-- View: Repo -->
+          <div id="view-repo" class="view-container">
+            <div class="repo-header">
+              <button class="btn-back" onclick="goBack()"><i data-lucide="arrow-left"></i></button>
+              <div>
+                <h1 id="repo-title" class="welcome-title">Subject Repository</h1>
+                <p class="welcome-subtext">Select a specific module to narrow your focus.</p>
+              </div>
+            </div>
+            <div id="topics-list" class="topic-list">
+              <!-- JS Injected Topics -->
+            </div>
+          </div>
+
+          <!-- View: Quiz -->
+          <div id="view-quiz" class="view-container">
+            <div class="repo-header">
+              <button class="btn-back" onclick="goBack()"><i data-lucide="arrow-left"></i></button>
+              <div>
+                <h1 id="quiz-title-header" class="welcome-title">Quiz Session</h1>
+                <p class="welcome-subtext">Focus and select the best possible option.</p>
+              </div>
+            </div>
+            <div id="quiz-container" class="quiz-wrapper">
+              <!-- JS Injected Quiz -->
+            </div>
+          </div>
+
+          <!-- View: Results -->
+          <div id="view-results" class="view-container">
+            <div class="repo-header">
+              <button class="btn-back" onclick="goBack()"><i data-lucide="arrow-left"></i></button>
+              <div>
+                <h1 class="welcome-title">Assessment Summary</h1>
+                <p class="welcome-subtext">Review your results and feedback.</p>
+              </div>
+            </div>
+            <div id="results-content">
+              <!-- JS Injected Results -->
+            </div>
+          </div>
+
+          <!-- View: History -->
+          <div id="view-history" class="view-container">
+            <div class="repo-header">
+              <button class="btn-back" onclick="goBack()"><i data-lucide="arrow-left"></i></button>
+              <div>
+                <h1 class="welcome-title">Your Progress</h1>
+                <p class="welcome-subtext">Analyze your past performance and growth.</p>
+              </div>
+            </div>
+            <div id="history-content">
+              <!-- JS Injected History -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          <div style="display: flex; gap: 1.5rem">
+            <span>System: Online</span>
+            <span>Database: 12,450 MCQs Loaded</span>
+          </div>
+          <div style="font-style: italic">
+            <span>v2.1.0 Stable Build | &copy; EntryTest Pro Ed-Tech</span>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
+
